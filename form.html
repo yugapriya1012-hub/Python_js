@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+    <label>Name: </label>
+    <input type="text" placeholder="Enter your name" id="name" >
+    <span id="error"></span>
+    <br>
+    <br>
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" id="email" >
+    <span id="error"></span>
+    <br>
+    <br>
+    <label>Password: </label>
+    <input type="Password" placeholder="Enter your password" id="password">
+    <span id="error"></span>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validateForm(){
+        let name=document.getElementById("name").value;
+        let email=document.getElementById("email").value;
+        let password=document.getElementById("password").value;
+        let error = document.getElementById("error");
+
+
+
+        
+
+        if(name===""){
+            error.innerText="This field is required";
+            return false;
+        }
+        
+        if(email===""){
+            alert("Email is required");
+            return false;
+        }
+        if(password.length<8){
+            alert("Password must be at least 8 characters");
+            return false;
+        }
+         
+        alert("Form submitted successfully")
+        return true;
+    }
+    </script>
+</body>
+</html>
