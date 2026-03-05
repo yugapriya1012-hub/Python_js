@@ -2,22 +2,22 @@
 
 #option 1
 # def contains_duplicates(nums):
-#     if len(nums)==0:
-#         return "invalid input"
-#     else:
-#         output=[]
-#         for i in range(0,len(nums),+1):
-#             if nums[i] not in output:
-#                 output.append(nums[i])
-#         # print(output) #[1,2,3]
-#         # print(nums)
-#         if len(nums)==len(output):
-#             return False
-#         else:
-#             return True
+    # if len(nums)==0:
+    #     return "invalid input"
+    # else:
+    #     output=[]
+    #     for i in range(0,len(nums),+1):
+    #         if nums[i] not in output:
+    #             output.append(nums[i])
+    #     # print(output) #[1,2,3]
+    #     # print(nums)
+    #     if len(nums)==len(output):
+    #         return False
+    #     else:
+    #         return True
     
 # print(contains_duplicates([1,2,3,1]))
-# print(contains_duplicates([1,2,3,4]))
+# print(contains_duplicates([1,2,3,4,8,1]))
 
 #option 2
 # def contains_duplicates(num):

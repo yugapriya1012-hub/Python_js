@@ -11,6 +11,7 @@
 #     b=[]
 #     for i in a:
 #         prod*=i
+#         # print(prod)
 #     for j in a:
 #         p=prod//j
 #         b.append(p)

@@ -72,6 +72,15 @@
 # #     return rev
 # # print(reverse("Abc def"))
 
+# option->2
+
+# def reverse(x):
+#     rev=""
+#     for i in range(len(x)-1,-1,-1):
+#         rev+=x[i]
+#     return rev
+# print(reverse("Abc def"))
+
 # 8
 # def count(word,letter):
 #     count=0

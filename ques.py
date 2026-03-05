@@ -72,13 +72,11 @@
 # remove_consecutive([1,1,2,2,2,3,1,1])
 
 #option 2
-# def remove_consecutive(x):
-#     result=[]
-#     result.append(x[0])
-#     for i in range(0,len(x),+1):
-#         if x[i]!=result[-1]:
-#             result.append(x[i])
-#     return result
-# print(remove_consecutive([1,1,2,2,2,3,1,1]))
-
-
+def remove_consecutive(x):
+    result=[]
+    result.append(x[0])
+    for i in range(0,len(x),+1):
+        if x[i]!=result[-1]:
+            result.append(x[i])
+    return result
+print(remove_consecutive([1,1,2,2,2,3,1,1]))
